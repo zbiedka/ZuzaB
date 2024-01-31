@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Portfolio Zuzanna</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        input {
+            text-align: center;
+            border-width: 0;
+
+        }
+        .btn-primary{background-color: #242F40;
+        border-color: #242F40}
+        body{
+            background-color: #FFFFFA;
+        }
+        .logo{
+            padding-right: 5%;
+            height: 7rem;
+
+        }
+        .order-md-2{
+            height: max-content;
+        }
+
+
+
+
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top  " style="background-color: #791837">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarCollapse">
+                <ul class="navbar-nav me-2 mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricingTable">Pricing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" role="button" data-bs-toggle="modal"
+                           data-bs-target="#contactForm">Contact me</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#A6808C"/>
+                </svg>
+
+                <div class="container ">
+                    <div class="carousel-caption">
+                        <div class="row mt-lg-5">
+                            <div class="col-lg-5 text-start">
+                                <img src="../assets/zuzaImg.png" width="70%">
+                            </div>
+
+                            <div class="col-lg-7 mt-auto text-start">
+                                <h1>About Me:</h1>
+                                <p>Hi! My name is Zuzanna Biedka and I am a UX/UI designer, currently studying information
+                                    technology in college. My design passion started when i took my 3D graphic classes
+                                    and fell in love with creating something from scratch. Check out my latest work!</p>
+                                <!--                                <p><a class="btn btn-lg btn-primary" href="#contactForm">Let's get in touch</a></p>-->
+                                <p>
+                                    <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#contactForm">Let's get in touch
+                                    </button>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#A6808C"/>
+                </svg>
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Web Design Services</h1>
+                        <img src="../assets/paleta1.png" width="15%">
+                        <p>Check my latest projects and appreciate their quality and taste</p>
+                        <p><a class="btn btn-lg btn-primary" href="#myProjects">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#A6808C"/>
+                </svg>
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Backend Development Services</h1>
+                        <img src="../assets/kompek.png"width="15%"  >
+                        <p>I also offer back-end developement services</p>
+                        <p><a class="btn btn-lg btn-primary" href="#technologies">Learn more about my stack</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-4">-->
+<!--                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"-->
+<!--                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"-->
+<!--                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>-->
+<!--                    <rect width="100%" height="100%" fill="#777"/>-->
+<!--                    <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>-->
+<!--                </svg>-->
+
+<!--                <h2>Heading</h2>-->
+<!--                <p>Some representative placeholder content for the three columns of text below the carousel. This is the-->
+<!--                    first column.</p>-->
+<!--                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>-->
+<!--            </div>&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
+<!--            <div class="col-lg-4">-->
+<!--                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"-->
+<!--                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"-->
+<!--                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>-->
+<!--                    <rect width="100%" height="100%" fill="#777"/>-->
+<!--                    <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>-->
+<!--                </svg>-->
+
+<!--                <h2>Heading</h2>-->
+<!--                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second-->
+<!--                    column.</p>-->
+<!--                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>-->
+<!--            </div>&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
+<!--            <div class="col-lg-4">-->
+<!--                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"-->
+<!--                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"-->
+<!--                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>-->
+<!--                    <rect width="100%" height="100%" fill="#777"/>-->
+<!--                    <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>-->
+<!--                </svg>-->
+
+<!--                <h2>Heading</h2>-->
+<!--                <p>And lastly this, the third column of representative placeholder content.</p>-->
+<!--                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>-->
+<!--            </div>&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
+<!--        </div>&lt;!&ndash; /.row &ndash;&gt;-->
+
+
+        <!-- START THE FEATURETTES -->
+
+<!--        <hr class="featurette-divider">-->
+
+        <div class="row featurette" id="myProjects">
+            <div class="col-md-12">
+                <h2 class="featurette-heading">EGC-Actuals<span
+                        class="text-muted"> Made in JavaScript</span></h2>
+                <img src="../assets/Egc_actuals_table_exmpl.png" class="float-end mt-lg-2 ms-2 img-fluid" width="80%">
+
+                <p class="lead">is a first out of two applications related to business intelligence enhancement.
+                    Customer operates in Home & Garden segment dealing with significant diversity across distribution
+                    channels and product categories. With our design we have achieved transparent and equivocal view over
+                    key financial measures. Application operates in a real time environment, what together with designed
+                    structure significantly improves the ability to swiftly steer revenue streams and conclude on next
+                    business steps and decisions.  We have also participated in design and implementation of back-end
+                    part of this application.</p>
+            </div>
+
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-12 order-md-2">
+                <h2 class="featurette-heading">Bank App <span
+                        class="text-muted">Made in Figma</span></h2>
+
+                <img src="../assets/bank.png" class="float-start mt-lg-2 me-3 img-fluid" width="70%">
+                <p class="lead">This project is a web design crafted using Figma. It's designed to be responsive, working
+                    seamlessly on mobile, tablet, and web browsers. Our focus is on women, recognizing the lack of personalized
+                    experiences in many banking apps. This design stands out with its elegant interface and easy access to everything you need.</p>
+            </div>
+
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-12 order-md-2">
+                <h2 class="featurette-heading">EGC-Market-Intel <span
+                        class="text-muted">Made in JavaScript</span></h2>
+
+                <img src="../assets/egc_market_app.png" class="float-end mt-lg-2 me-3 img-fluid" width="70%">
+                <p class="lead">Market-Intel was designed and implemented as a front-end tool supporting market
+                    data mining delivered to our customer by one of the leading market research companies.
+                    The structure and scope of delivered data required significant overhaul. With our application
+                    the company was able to leap from heavy, slow and inefficient MS Excel based analyses, into one-click,
+                    in-depth transparent and high quality drilled-down reporting available on-line.
+
+                    </p>
+            </div>
+
+        </div>
+
+        <hr class="featurette-divider" id="technologies">
+
+        <div class="row featurette">
+            <div class="col-md-12 order-md-2" >
+                <h2 class="featurette-heading">Technologies I know. <span
+                        class="text-muted">...and I am quite fluent in</span></h2>
+                <br />
+                <img class="logo" src="../assets/javascript.png"  >
+                <img class="logo" src="../assets/logohtmlpng.png" >
+                <img class="logo" src="../assets/clogopng.png" >
+                <img class="logo" src="../assets/figmalogo.png" >
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+
+
+
+    <!--    modal body-->
+    <div class="modal fade" id="contactForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Sender details:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   <br>
+
+
+
+
+
+
+
+
+
+    </div>
+    <hr class="featurette-divider col-md-7 ms-auto me-auto">
+
+    <!-- CALCULATOR-->
+    <div class="container-fluid col-md-6 mt-lg-5" id="pricingTable">
+        <h1>Project price approximation</h1>
+        <p>Use the calculator below to assess expected pricing of given service bundle</p>
+        <br>
+        <div class="row mb-lg-5">
+            <div class="col-md-4">
+                <p>Small Web Project</p>
+                <ul>
+                    <li>concept phase: 10-50 hrs</li>
+                    <li>implementation phase: 40-100 hrs</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <p>Medium Web Project</p>
+                <ul>
+                    <li>concept phase: 40-100 hrs</li>
+                    <li>implementation phase: 40-200 hrs</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <p>Backend solution developement (eg. db-logic for medium project)</p>
+                <ul>
+                    <li>concept phase: 10-3 hrs</li>
+                    <li>development phase: 10-25 hrs</li>
+                </ul>
+            </div>
+
+        </div>
+        <br>
+        <table class="table" style="text-align: center">
+            <thead>
+            <tr>
+                <th scope="col" style="text-align: left">Activity</th>
+                <th scope="col">Price per hour</th>
+                <th scope="col">Hours</th>
+                <th scope="col">Total activity cost</th>
+            </tr>
+            </thead>
+
+            <tbody>
+
+
+            <tr>
+                <th scope="row" style="text-align: left">
+                    Design concept
+                </th>
+                <td>
+                    <input type="number" readonly value="0" id="u_price_design" style="text-align:center"/>
+                </td>
+
+                <td>
+                    <input type="number" value="0" class="qty" id="qty_design"/>
+                </td>
+                <td>
+                    <input type="number" readonly value="0" id="price_design"/>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row" style="text-align: left">
+                    Design implementation
+                </th>
+                <td>
+                    <input type="number" readonly value="0" id="u_price_exec"/>
+                </td>
+
+                <td>
+                    <input type="number" value="0" class="qty" id="qty_exec"/>
+                </td>
+                <td>
+                    <input type="number" readonly value="0" id="price_exec"/>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row" style="text-align: left">
+                    Developement
+                </th>
+
+                <td>
+
+                    <input type="number" readonly value="0" id="u_price_dev"/>
+
+                </td>
+
+                <td>
+                    <input type="number" value="0" class="qty" id="qty_dev"/>
+                </td>
+                <td>
+                    <input type="number" readonly value="0" id="price_dev"/>
+                </td>
+            </tr>
+            <tr class="table-secondary">
+                <th scope="row" style="text-align: left">
+                    Total cost:
+                </th>
+
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    <input type="number" readonly value="0" id="price_total" class="fw-bold"/>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <!-- FOOTER -->
+    <footer class="container mt-lg-5">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+</main>
+
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+    function calculateTotal() {
+        let unit_price = {
+            design: 120,
+            exec: 140,
+            dev: 200,
+
+        };
+        let item_price = {}
+        $("#u_price_design").val(unit_price.design);
+        item_price.design = ($("#qty_design").val() * unit_price.design)
+        $("#price_design").val(item_price.design);
+
+        $("#u_price_exec").val(unit_price.exec);
+        item_price.exec = ($("#qty_exec").val() * unit_price.exec)
+        $("#price_exec").val(item_price.exec);
+
+
+        $("#u_price_dev").val(unit_price.dev);
+        item_price.dev = ($("#qty_dev").val() * unit_price.dev)
+        $("#price_dev").val(item_price.dev);
+
+        let total = item_price.design + item_price.exec + item_price.dev;
+        $("#price_total").val(total);
+
+    }
+
+
+    $(function () {
+        $(".qty").on("change keyup", calculateTotal)
+    })
+
+
+</script>
+
+
+</body>
+</html>
